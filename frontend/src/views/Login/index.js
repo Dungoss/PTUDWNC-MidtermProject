@@ -1,11 +1,19 @@
 import './index.css'
+import { FaFacebook, FaGoogle } from "react-icons/fa";
+import React from 'react';
+
+
  const Login = () =>{
     return(
-      <div id="loginform">
-        <FormHeader title="Login" />
-        <Form />
-        <OtherMethods />
+      <>
+      <div>
+          <div id="loginform">  
+            <FormHeader title="Login" />
+            <Form />
+            <OtherMethods />
+          </div>
       </div>
+      </>
     )
 }
 
@@ -34,12 +42,21 @@ const FormInput = props => (
     <input type={props.type} placeholder={props.placeholder}/>
   </div>  
 );
+  
 
 const OtherMethods = props => (
   <div id="alternativeLogin">
     <label>Or sign in with:</label>
+    <div id="iconGroup">
+      <div className='fb'>
+        <FaFacebook />
+      </div>
+      <div className='gg'>
+        <FaGoogle />
+      </div>
+    </div>
   </div>
 );
 
 
-export default Login;
+export default React.memo(Login);

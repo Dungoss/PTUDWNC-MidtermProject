@@ -1,10 +1,17 @@
 //import React, { useEffect, useState } from 'react';
 import React from 'react';
+import BaseLayout from '../../components/BaseLayout';
 
 let HomePage = () => {
   return (
-    <h1>Home Page</h1>
+    <>
+    <BaseLayout>
+      <div>
+        <h1>Home Page</h1>
+      </div>
+    </BaseLayout>
+    </>
   );
 };
 
-export default HomePage;
+export default React.memo(HomePage);
