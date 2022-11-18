@@ -13,6 +13,8 @@ import {
 
 import HomePage from './views/HomePage';
 import Login from './views/Login';
+import SignUp from './views/Signup';
+import GroupListPage from './views/GroupListPage';
 
 configLocalStorage();
 
@@ -70,6 +72,8 @@ function App() {
           <Routes>
             <Route path ="/" element={<HomePage />}/>            
             <Route path="/login" element={<Login />}/>
+            <Route path="/signup" element={<SignUp />}/>
+            <Route path="/group-list" element={<GroupListPage />}/>
           </Routes>
         </div>
       </Router>
