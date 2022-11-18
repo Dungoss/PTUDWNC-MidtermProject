@@ -40,7 +40,7 @@ export default function SignUp() {
   };
 
   return (
-    <div background-color='white'>
+    <div className='root'>
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />

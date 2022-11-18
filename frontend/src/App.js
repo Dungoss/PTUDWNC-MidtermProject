@@ -1,20 +1,14 @@
 import './assets/App.css';
 import React from 'react';
 import configLocalStorage from './utils/storage';
-import { Button } from '@chakra-ui/react';
-import { Link as ReachLink } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-} from '@chakra-ui/react'
+
 
 import HomePage from './views/HomePage';
 import Login from './views/Login';
 import SignUp from './views/Signup';
 import GroupListPage from './views/GroupListPage';
+import ProfilePage from './views/ProfilePage';
 
 configLocalStorage();
 
@@ -26,54 +20,42 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link as={ReachLink} to='/'>Home</Link>
+                <Link className='link'  to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/login'>Login</Link>
+                <Link className='link' to='/login'>Login</Link>
               </li>
               <li>
-                <Link to='/account-mail-activate'>Activate Account</Link>
+                <Link className='link' to='/account-mail-activate'>Activate Account</Link>
               </li>
               <li>
-                <Link to='/create-group'>Create Group</Link>
+                <Link className='link' to='/create-group'>Create Group</Link>
               </li>
               <li>
-                <Link to='/create-invite-link'>Create Invite Link</Link>
+                <Link className='link' to='/create-invite-link'>Create Invite Link</Link>
               </li>
               <li>
-                <Link to='/group-list'>Groups list</Link>
+                <Link className='link' to='/group-list'>Groups list</Link>
               </li>
               <li>
-                <Link to='/profile'>Profile Page</Link>
+                <Link className='link' to='/profile'>Profile Page</Link>
               </li>
               <li>
-                <Link to='/signup'>Signup Page</Link>
+                <Link className='link' to='/signup'>Signup Page</Link>
               </li>
               <li>
-                <Link to='/social-login'>Social Login Page</Link>
+                <Link className='link' to='/social-login'>Social Login Page</Link>
               </li> 
             </ul>
           </nav>
         </div>
-        <Menu>
-        <MenuButton as={Button}>
-    Actions
-        </MenuButton>
-          <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
-          </MenuList>
-        </Menu>
-
         <div className="App">
           <Routes>
             <Route path ="/" element={<HomePage />}/>            
             <Route path="/login" element={<Login />}/>
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/group-list" element={<GroupListPage />}/>
+            <Route path="/profile" element={<ProfilePage />}></Route>
           </Routes>
         </div>
       </Router>

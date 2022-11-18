@@ -37,9 +37,17 @@ nav ul li {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: #096b86;
+  text-decoration: none;
 }
+
+.link:hover {
+  color: red;
+  text-decoration: none;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
