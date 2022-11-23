@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import { Formik, Field, Form, useField, useFormikContext } from 'formik';
 import './styles.css';
 
@@ -77,13 +77,13 @@ function CreateGroupForm() {
               <Field name="mem3" />
             </label>
             
-           {/* <label>
+           <label>
               textC
               <MyField name="textC" />
               <small>
                 (the result of <code>fetchNewTextC(textA, textB))</code>
               </small>
-  </label>*/}
+            </label>
             <button type="submit">Submit</button>
           </Form>
         </div>

@@ -23,15 +23,8 @@ function App() {
               <li>
                 <Link className='link'  to='/'>Home</Link>
               </li>
-
-              <li>
-                <Link className='link' to='/account-mail-activate'>Activate Account</Link>
-              </li>
               <li>
                 <Link className='link' to='/create-group'>Create Group</Link>
-              </li>
-              <li>
-                <Link className='link' to='/create-invite-link'>Create Invite Link</Link>
               </li>
               <li>
                 <Link className='link' to='/group-list'>Groups list</Link>
@@ -41,9 +34,6 @@ function App() {
               </li>
               <li>
                 <Link className='link' to='/signup'>Signup</Link>
-              </li>
-              <li>
-                <Link className='link' to='/social-login'>Social Login</Link>
               </li> 
               <li>
                 <Link className='link' id='login' to='/login'>Login</Link>

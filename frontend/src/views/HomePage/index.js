@@ -7,7 +7,7 @@ let HomePage = () => {
       <div className='root'>
         <div className='welcome'>
           <h1 className='greeting'>  
-            <img src="https://a.slack-edge.com/6c404/marketing/img/homepage/bold-existing-users/waving-hand.gif"></img>
+            <img src="https://a.slack-edge.com/6c404/marketing/img/homepage/bold-existing-users/waving-hand.gif" alt="Hello"></img>
             <span>
               welcome back
             </span>
