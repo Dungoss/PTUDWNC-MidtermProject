@@ -16,7 +16,7 @@ html{
   max-height: 700px;
   width: 30%;
   height: 60%;
-  margin: 100px auto;
+  margin: 0px auto;
   background-color: #FFFFFF;
   border-radius: 25px;
 }
@@ -117,7 +117,7 @@ html{
 #iconGroup{
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 #iconGroup a{
@@ -126,8 +126,9 @@ html{
 
 #alternativeLogin {
    text-align: center;
-   padding-top: 2rem;
-   margin-top: 1.5rem;
+   padding-top: 0.5rem;
+   margin-top: 0.5rem;
+   margin-left: 0rem;
 }
 
 .fb {

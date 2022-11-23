@@ -1,17 +1,21 @@
-//import React, { useEffect, useState } from 'react';
+import './index.css'
 import React from 'react';
-import BaseLayout from '../../components/BaseLayout';
 
 let HomePage = () => {
   return (
     <>
-    <BaseLayout>
-      <div>
-        <h1>Home Page</h1>
+      <div className='root'>
+        <div className='welcome'>
+          <h1 className='greeting'>  
+            <img src="https://a.slack-edge.com/6c404/marketing/img/homepage/bold-existing-users/waving-hand.gif"></img>
+            <span>
+              welcome back
+            </span>
+          </h1>
+        </div>
       </div>
-    </BaseLayout>
     </>
   );
 };
 
-export default React.memo(HomePage);
+export default HomePage;

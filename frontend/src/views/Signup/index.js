@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './index.css'
 
 
 function Copyright(props) {
@@ -42,7 +43,7 @@ export default function SignUp() {
   return (
     <div className='root'>
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" className='ctn'>
         <CssBaseline />
         <Box
           sx={{

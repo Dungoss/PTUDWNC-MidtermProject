@@ -9,12 +9,13 @@ import Login from './views/Login';
 import SignUp from './views/Signup';
 import GroupListPage from './views/GroupListPage';
 import ProfilePage from './views/ProfilePage';
+import CreateGroupForm from './views/CreateGroupPage';
 
 configLocalStorage();
 
 function App() {
   return (
-    <div>
+    <div className='root'>
       <Router>
         <div>
           <nav>
@@ -22,9 +23,7 @@ function App() {
               <li>
                 <Link className='link'  to='/'>Home</Link>
               </li>
-              <li>
-                <Link className='link' to='/login'>Login</Link>
-              </li>
+
               <li>
                 <Link className='link' to='/account-mail-activate'>Activate Account</Link>
               </li>
@@ -38,14 +37,17 @@ function App() {
                 <Link className='link' to='/group-list'>Groups list</Link>
               </li>
               <li>
-                <Link className='link' to='/profile'>Profile Page</Link>
+                <Link className='link' to='/profile'>Profile</Link>
               </li>
               <li>
-                <Link className='link' to='/signup'>Signup Page</Link>
+                <Link className='link' to='/signup'>Signup</Link>
               </li>
               <li>
-                <Link className='link' to='/social-login'>Social Login Page</Link>
+                <Link className='link' to='/social-login'>Social Login</Link>
               </li> 
+              <li>
+                <Link className='link' id='login' to='/login'>Login</Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -56,9 +58,14 @@ function App() {
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/group-list" element={<GroupListPage />}/>
             <Route path="/profile" element={<ProfilePage />}></Route>
+            <Route path="/create-group" element={<CreateGroupForm />}></Route>
           </Routes>
         </div>
       </Router>
+
+      <div className='footer'>
+        <h1>The footer</h1>
+      </div>
     </div>
   );
 }
