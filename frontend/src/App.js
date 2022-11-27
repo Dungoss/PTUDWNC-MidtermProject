@@ -52,10 +52,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-
-      <div className='footer'>
-        <h1>The footer</h1>
-      </div>
     </div>
   );
 }

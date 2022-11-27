@@ -1,5 +1,6 @@
 import './index.css'
 import React from 'react';
+import Footer from "../../components/Footer";
 
 let HomePage = () => {
   return (
@@ -14,6 +15,7 @@ let HomePage = () => {
           </h1>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
