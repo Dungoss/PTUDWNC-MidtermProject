@@ -30,17 +30,7 @@ export const registerApi = ({ username, password }) =>
       });
   });
 
-export const getGroups = ({ }) =>
-  new Promise((resolve, reject) => {
-    api
-      .get(`/account/get-groups`)
-      .then((rs) => {
-        resolve(rs);
-      })
-      .catch((err) => {
-        reject(err);
-      });
-  });
+export const getGroups = () => api.get(`account/get-groups`);
 export const createGroup = ({ group_name }) =>
   new Promise((resolve, reject) => {
     api
