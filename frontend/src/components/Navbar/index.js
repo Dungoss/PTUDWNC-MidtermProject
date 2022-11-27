@@ -47,7 +47,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Create a Group
               </Link>
             </li>
             <li className='nav-item'>
