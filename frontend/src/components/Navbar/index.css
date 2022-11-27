@@ -10,6 +10,10 @@
   z-index: 999;
 }
 
+.btn {
+  margin-top: 0px;
+}
+
 .navbar-container {
   display: flex;
   justify-content: center;
