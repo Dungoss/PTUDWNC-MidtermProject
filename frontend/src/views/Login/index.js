@@ -6,7 +6,7 @@ import React from 'react';
  const Login = () =>{
     return(
       <>
-      <div>
+      <div className='cover'>
           <div id="loginform">  
             <FormHeader title="Login" />
             <Form />

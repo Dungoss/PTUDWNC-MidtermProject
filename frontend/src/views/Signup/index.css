@@ -1,7 +1,12 @@
 .ctn {
-    margin-top: -60px;
+    margin-top: -66px;
 }
 
 .root {
     margin: 0;
+    height: 643px;
+}
+
+.cover {
+    height: 643px;
 }
