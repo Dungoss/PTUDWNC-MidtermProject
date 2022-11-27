@@ -1,14 +1,15 @@
 import React from 'react';
 import './index.css';
 import CardItem from '../GroupElement';
-import { Button } from '../Button';
+
+import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
     <div className='cards'>
       <h1>These are the groups</h1>
       <div className="btn1">
-        <Button buttonStyle='btn--outline'>Join a group?</Button>
+        <Link to='/profile' className='link1'>Join a group?</Link>      
       </div>
       <div className='cards__container'>
         <div className='cards__wrapper'>

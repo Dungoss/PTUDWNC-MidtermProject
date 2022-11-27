@@ -5,13 +5,21 @@
 
   .btn1 {
     
-    background-color: black !important;
+    background-color:antiquewhite;
     align-items: center;
     margin-left: auto;  
     margin-right: auto;
     margin-top: 20px;
-    width: 151.5px;
-    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .btn1 .link1 {
+    text-decoration: none;
+    color: black;
+
   }
 
   h1 {

@@ -1,60 +1,27 @@
+import React from 'react'
+import { Image, List } from 'semantic-ui-react'
 
-import { Row, Col, Button } from 'antd';
-import "./index.css"
+const ProfilePage = () => (
+  <List divided verticalAlign='middle'>
+    <List.Item>
+      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/daniel.jpg' />
+      <List.Content>
+        <List.Header as='a'>Daniel Louise</List.Header>
+      </List.Content>
+    </List.Item>
+    <List.Item>
+      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/stevie.jpg' />
+      <List.Content>
+        <List.Header as='a'>Stevie Feliciano</List.Header>
+      </List.Content>
+    </List.Item>
+    <List.Item>
+      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+      <List.Content>
+        <List.Header as='a'>Elliot Fu</List.Header>
+      </List.Content>
+    </List.Item>
+  </List>
+)
 
-export default function PersonalProfile() {
-  return (
-    <div id="profile-account">
-    <div
-      style={{
-        width: '100%',
-        marginBottom: '30px',
-      }}
-    >
-      <Button style={{
-        backgroundColor: "#39AEA9",
-        marginLeft: "30px",
-        color: 'white'
-      }}
-      >Cập nhật</Button>
-    </div>
-    <Row gutter={[16, 16]}>
-      <Col span={8} style={{ textAlign: "left" }} className="col-title">
-        Name: Lê Duy Dũng
-      </Col>
-      <Col span={16} className="col-content">
-      </Col>
-    </Row>
-    <Row gutter={[16, 16]}>
-      <Col span={8} style={{ textAlign: "left" }} className="col-title">
-        Email: leduydung0123@gmail.com
-      </Col>
-      <Col span={16} className="col-content">
-      </Col>
-    </Row>
-    <Row gutter={[16, 16]}>
-      <Col span={8} style={{ textAlign: "left" }} className="col-title">
-        Role: Admin
-      </Col>
-      <Col span={16} className="col-content">
-      </Col>
-    </Row>
-    <Row gutter={[16, 16]}>
-      <Col span={8} style={{ textAlign: "left" }} className="col-title">
-        Trạng thái: có bồ
-      </Col>
-    </Row>
-    <Row gutter={[16, 16]}>
-
-    </Row>
-    <Row gutter={[16, 16]}>
-      <Col span={8} style={{ textAlign: "left" }} className="col-title">
-        Thời gian cập nhật
-      </Col>
-      <Col span={16} className="col-content">
-      </Col>
-    </Row>
-  </div>
-
-  );
-}
+export default ProfilePage;
