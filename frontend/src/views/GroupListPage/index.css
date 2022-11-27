@@ -1,0 +1,14 @@
+.group {
+    
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.item {
+    border: 1px solid gray !important;
+    
+}
