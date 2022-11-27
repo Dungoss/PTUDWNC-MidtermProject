@@ -12,7 +12,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { registerApi } from "../../api";
+import { loginApi } from "../../api";
 import "./index.css";
 
 function Copyright(props) {
@@ -43,14 +43,15 @@ export default function Login() {
       email: data.get("email"),
       password: data.get("password"),
     });
-    const res = await registerApi({
+    const res = await loginApi({
       username: data.get("email"),
       password: data.get("password"),
     });
     console.log("res", res);
     if (res?.success) {
-      
+      localStorage.setItem("auth", JSON.stringify(res?.payload));
     }
+    console.log(localStorage.getItem("auth"));
   };
 
   return (

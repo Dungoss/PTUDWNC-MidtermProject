@@ -29,3 +29,28 @@ export const registerApi = ({ username, password }) =>
         reject(err);
       });
   });
+
+export const getGroups = ({ }) =>
+  new Promise((resolve, reject) => {
+    api
+      .get(`/account/get-groups`)
+      .then((rs) => {
+        resolve(rs);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+export const createGroup = ({ group_name }) =>
+  new Promise((resolve, reject) => {
+    api
+      .post(`/account/create-group`, {
+        group_name,
+      })
+      .then((rs) => {
+        resolve(rs.data);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });

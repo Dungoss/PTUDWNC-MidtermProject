@@ -12,23 +12,22 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { registerApi } from "../../api";
+import { createGroup } from "../../api";
 import "./index.css";
 
 
 const theme = createTheme();
 
 export default function CreateGroupForm() {
+  const user = JSON.parse(localStorage.getItem('auth'));
+  console.log("user group", user)
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-    const res = await registerApi({
-      username: data.get("email"),
-      password: data.get("password"),
+
+    const res = await createGroup({
+      group_name: data.get("group_name"),
+      account_id: user?.id
     });
     console.log("res", res);
     if (res?.success) {
@@ -63,34 +62,34 @@ export default function CreateGroupForm() {
               >
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
-                    <TextField
+                    {/* <TextField
                       required
                       fullWidth
                       id="mem"
                       label="Họ và tên thành viên thứ nhất"
                       name="member"
                       autoComplete="name"
-                    />
+                    /> */}
                   </Grid>
                   <Grid item xs={12}>
-                    <TextField
+                    {/* <TextField
                       required
                       fullWidth
                       id="mem"
                       label="Họ và tên thành viên thứ 2"
                       name="member"
                       autoComplete="name"
-                    />
+                    /> */}
                   </Grid>
                   <Grid item xs={12}>
-                    <TextField
+                    {/* <TextField
                       required
                       fullWidth
                       id="mem"
                       label="Họ và tên thành viên thứ 3"
                       name="member"
                       autoComplete="name"
-                    />
+                    /> */}
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
@@ -98,7 +97,7 @@ export default function CreateGroupForm() {
                       fullWidth
                       id="mem"
                       label="Tên nhóm"
-                      name="member"
+                      name="group_name"
                       autoComplete="name"
                     />
                   </Grid>
@@ -111,7 +110,7 @@ export default function CreateGroupForm() {
                   variant="contained"
                   sx={{ mt: 3, mb: 2 }}
                 >                             
-                  <Link href='/group-list' className="link">Tạo nhóm</Link>
+                  Tạo nhóm
                 </Button>
               </Box>
             </Box>
