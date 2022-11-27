@@ -1,9 +1,11 @@
 import './index.css'
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import React from 'react';
+import { loginApi } from '../../api';
 
 
  const Login = () =>{
+  
     return(
       <>
       <div className='cover'>
@@ -24,15 +26,15 @@ const FormHeader = props => (
 
 const Form = props => (
    <div>
-     <FormInput description="Username" placeholder="Enter your username" type="text" />
-     <FormInput description="Password" placeholder="Enter your password" type="password"/>
-     <FormButton title="Log in"/>
+     <FormInput description="Tên đăng nhập" placeholder="Nhập tên đăng nhập" type="text" />
+     <FormInput description="Mật khẩu" placeholder="Nhập mật khẩu" type="password"/>
+     <FormButton title="Đăng nhập"/>
    </div>
 );
 
 const FormButton = props => (
   <div id="button" class="row">
-    <button>{props.title}</button>
+    <button type='submit'>{props.title}</button>
   </div>
 );
 
