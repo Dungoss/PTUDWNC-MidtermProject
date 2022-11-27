@@ -1,0 +1,18 @@
+.ctn {
+  margin-top: -66px;
+}
+
+.root {
+  margin: 0;
+  height: 643px;
+}
+
+.cover {
+  height: 643px;
+  background: url('../../../public/images/img-8.jpg');
+}
+
+.link {
+  text-decoration: none !important;
+  color: black !important;
+}
