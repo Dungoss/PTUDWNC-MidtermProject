@@ -1,18 +1,18 @@
 .ctn {
-  margin-top: -66px;
+    margin-top: -66px;
 }
 
 .root {
-  margin: 0;
-  height: 643px;
+    margin: 0;
+    height: 643px;
 }
 
 .cover {
-  height: 643px;
-  background: url('../../../public/images/img-8.jpg');
+    height: 643px;
+    background: url('../../../public/images/img-8.jpg');
 }
 
 .link {
-  text-decoration: none !important;
-  color: black !important;
+    text-decoration: none !important;
+    color: black !important;
 }

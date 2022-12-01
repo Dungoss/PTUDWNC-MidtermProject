@@ -1,5 +1,4 @@
 .group {
-    
     margin: auto;
     width: 300px;
     padding: 10px;
@@ -10,5 +9,4 @@
 
 .item {
     border: 1px solid gray !important;
-    
 }

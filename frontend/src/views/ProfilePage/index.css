@@ -1,23 +1,20 @@
-
-
-  .col-title{
-      font-weight: bold;
-      font-size: 18px;
-      text-align:center !important;
-      padding: 10px 0
-  }
-  .col-content{
-      padding: 10px 0;
-      font-size: 18px;
-  }
-  .ant-checkbox-wrapper{
-      padding: 0 8px;
-
-  }
-  .text-copy{
-      cursor: pointer;
-  }
-  .text-copy:hover{
+.col-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center !important;
+    padding: 10px 0;
+}
+.col-content {
+    padding: 10px 0;
+    font-size: 18px;
+}
+.ant-checkbox-wrapper {
+    padding: 0 8px;
+}
+.text-copy {
+    cursor: pointer;
+}
+.text-copy:hover {
     color: green;
     opacity: 0.5;
-    }
+}
