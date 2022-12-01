@@ -1,6 +1,6 @@
 const groupController = {};
 const groupSchema = require("./groupSchema");
-const accountSchema = require("../account/accountSchema")
+const accountSchema = require("../account/accountSchema");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const { secretOrKey, tokenExpireTime } = require("../../config/keys");
@@ -8,7 +8,7 @@ const { secretOrKey, tokenExpireTime } = require("../../config/keys");
 groupController.Create = async (req, res, next) => {
   try {
     let { group_name, account_id } = req.body;
-    console.log("account_id", account_id)
+    console.log("account_id", account_id);
 
     let group = await groupSchema.findOne({ group_name });
     if (group) {
@@ -35,7 +35,6 @@ groupController.Join = async (req, res, next) => {
     let group = await accountSchema.findByIdAndUpdate(req.user._id, {
       $set: { group_id: req.body.group_id },
     });
-  
 
     return res
       .status(200)

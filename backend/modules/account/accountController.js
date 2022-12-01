@@ -75,7 +75,9 @@ accountController.Login = async (req, res, next) => {
             });
 
             // TODO TEST
-            return res.status(200).json({ success: true, token: token, payload: payload });
+            return res
+              .status(200)
+              .json({ success: true, token: token, payload: payload });
             // jwt.sign(
             //     payload,
             //     secretOrKey, {
